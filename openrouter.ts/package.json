@@ -1,0 +1,20 @@
+{
+  "name": "openrouter-typescript-example",
+  "version": "1.0.0",
+  "description": "A TypeScript example for using OpenRouter API",
+  "main": "main.ts",
+  "scripts": {
+    "start": "ts-node main.ts",
+    "build": "tsc",
+    "dev": "ts-node --watch main.ts"
+  },
+  "keywords": ["openrouter", "api", "typescript", "ai"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0",
+    "dotenv": "^16.4.7"
+  }
+} 
