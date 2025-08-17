@@ -152,8 +152,8 @@ nvidia-smi
 export VLLM_ATTENTION_BACKEND=TRITON_ATTN_VLLM_V1
 vllm serve openai/gpt-oss-20b \
   --quantization mxfp4 \
-  --enforce-eager \
   --max-model-len 8192 \
+  --max-seq-len-to-capture 4096 \
   --gpu-memory-utilization 0.85
 ```
 
