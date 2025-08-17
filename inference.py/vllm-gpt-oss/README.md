@@ -150,10 +150,14 @@ nvidia-smi
 
 ```bash
 export VLLM_ATTENTION_BACKEND=TRITON_ATTN_VLLM_V1
+export VLLM_WORKER_MULTIPROC=1
+export VLLM_NUM_CPU_THREADS=6
+
 vllm serve openai/gpt-oss-20b \
   --quantization mxfp4 \
   --max-model-len 8192 \
   --max-seq-len-to-capture 4096 \
+  --max-num-batched-tokens 512 \
   --gpu-memory-utilization 0.85
 ```
 
