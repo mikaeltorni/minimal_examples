@@ -41,21 +41,6 @@ uvx --from huggingface_hub hf download mradermacher/OpenCodeReasoning-Nemotron-1
   --local-dir ~/models/opencodereasoning-nemotron-1.1-32b-gguf
 ```
 
-### Run with llama-cli (Big Context)
-
-```bash
-MODEL=~/models/opencodereasoning-nemotron-1.1-32b-gguf/OpenCodeReasoning-Nemotron-1.1-32B.Q4_K_M.gguf
-
-./build/bin/llama-cli \
-  -m "$MODEL" \
-  -c 65536 \
-  -t $(nproc) \
-  -ngl 999 \
-  -b 4096 \
-  -ubatch 1024 \
-  -p "You are Nemotron 1.1 Code Reasoning 32B. Say 'ready' if loaded."
-```
-
 ### Run the OpenAI-Compatible Server
 
 ```bash
