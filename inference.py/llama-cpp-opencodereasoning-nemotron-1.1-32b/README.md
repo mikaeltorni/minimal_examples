@@ -12,13 +12,6 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-### Create & Activate Environment
-```bash
-# Create virtual environment with uv
-uv venv -p 3.12
-. .venv/bin/activate
-```
-
 ### Install Python Dependencies
 ```bash
 uv sync
